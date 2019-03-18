@@ -17,8 +17,6 @@ struct avoidanceOutput {
   float velocity_far_from_obstacles;  // maximal velocity with no obstacles in
                                       // sight
   ros::Time last_path_time;           // finish built time for the VFH+* tree
-
-  Eigen::Vector3f take_off_pose;  // last vehicle position when not armed
   float starting_height;  // height at which the system starts planning a path
 
   std::vector<Eigen::Vector3f> path_node_positions;  // array of tree nodes
